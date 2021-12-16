@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cathay_pacific</string>
+    <string name="page_two">分頁2</string>
+    <string name="switch_page_one">切至分頁1</string>
+    <string name="switch_page_two">切至分頁2</string>
+    <string name="online_test_a">線上測驗A</string>
+    <string name="online_test_b">線上測驗B</string>
+    <string name="item_position">項目%1$d</string>
+</resources>

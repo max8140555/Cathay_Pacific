@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_main"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="@color/color_75b04e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_switch_page"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:background="@drawable/shape_4472c4_radius_6_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="切至分頁1"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_switch_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
